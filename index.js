@@ -5,6 +5,12 @@ const question = document.getElementById("question");
 const input = document.getElementById("input");
 const totalScore = document.getElementById('score')
 
+
+if (!localStorage.getItem("initialized")) {
+  localStorage.clear();
+  localStorage.setItem("initialized", true);
+}
+
 let score = JSON.parse(localStorage.getItem("score"))
 totalScore.innerHTML = `score : ${score}`
 question.innerHTML = `What is ${num1} multiplied by ${num2}?`;
