@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+    font-family: cursive;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+margin: 5px;
+}
+.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px green;
+    color: green;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3)inset;
+}
+.input::placeholder{
+    color: lightgray;
+    font-family: cursive;
+}
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    outline-style: none;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    font-family: cursive;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(0.9);
+}
+.score{
+    color: green;
+    text-align: right;
+}
